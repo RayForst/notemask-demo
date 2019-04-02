@@ -9,14 +9,15 @@ block heading
 block content
   .form-block.w-form
     form#createNode(name="email-form")
-      textarea(
-        id="field"
-        name="note"
-        placeholder="Write your note here..."
-        maxlength="5000"
-        required=""
-        class="textarea w-input"
-      )
+      .text-area-wrap
+        textarea(
+          id="field"
+          name="note"
+          placeholder="Write your note here..."
+          maxlength="5000"
+          required=""
+          class="textarea w-input"
+        )
       .slide-toggle.settings-block.hide
         .row.gap-60
           .col-xs-12.col-sm-6 

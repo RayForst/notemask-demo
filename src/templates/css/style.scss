@@ -409,7 +409,8 @@ label.error {
   color: red;
   margin-bottom: 10px;
   font-family: "Graphik Bold";
-  margin-top: 20px;
+  margin-top: 12px;
+  margin-bottom: 0;
 }
 
 .tooltip-container {
@@ -420,7 +421,7 @@ label.error {
 .tooltip {
   opacity: 0;
   z-index: 99;
-  color: #bbb;
+  color: #fff;
   width: 190px;
   display: block;
   font-size: 13px;
@@ -428,8 +429,8 @@ label.error {
   border-radius: 3px;
   text-align: center;
   text-shadow: 1px 1px 2px #111;
-  background: rgba(51,51,51,0.9);
-  border: 1px solid rgba(34,34,34,0.9);
+  background: rgba(#323453,0.9);
+  border: 1px solid rgba(#323453,0.9);
   box-shadow: 0 0 3px rgba(0,0,0,0.5);
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
@@ -450,7 +451,7 @@ label.error {
   content: '';
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-top: 10px solid rgba(51,51,51,0.9);
+  border-top: 10px solid rgba(#323453,0.9);
   position: absolute;
   bottom: -10px;
     left: 43%;
@@ -475,4 +476,14 @@ label.error {
 
 .textarea {
   resize: none;
+  margin-bottom: 0;
+}
+.text-area-wrap {
+  margin-bottom: 30px;
+}
+
+.textarea, .ui-input {
+  &.error {
+    border: 1px solid red;
+  }
 }
