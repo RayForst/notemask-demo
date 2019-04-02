@@ -1,0 +1,17 @@
+extends _layout.pug
+
+block title
+  | Ready - Notemask
+
+block heading
+  | Note link ready
+  
+block content
+  .warning-block The note will self-destruct after reading it
+  .info-block#link.tooltip-container
+    b https://privnote.com/iAprlmFg#RuQJmspr1
+    span.tooltip Copied to clipboard
+  .button-group
+    .secondary-button.w-button#copyNote Copy note link
+    .secondary-button.w-button Email link
+    .primary-button.w-button.right Destroy note now

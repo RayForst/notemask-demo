@@ -1,0 +1,29 @@
+extends _layout.pug
+
+block title
+  | Ready with Password - Notemask
+
+block heading
+  | Note link ready
+  
+block content
+  .warning-block The note will self-destruct in 
+    span#countdown(data-minute="minute" data-second="second")
+  .info-block#link.tooltip-container
+    b https://privnote.com/iAprlmFg#RuQJmspr1
+    span.tooltip Copied to clipboard
+  .button-group
+    .secondary-button.w-button#copyNote Copy note link
+    .secondary-button.w-button Email link
+    a.primary-button.w-button.right(href="#" data-close="Destroy note now")#readWithPassword Read link
+  .spacer
+  .spacer
+  .spacer
+  .slide-block.hide
+    .transparent-block
+      h3 Note password
+      .caption Password necessary to read the note
+      input.ui-input(type="password" value="34345")#passToggle
+    .button-group
+      .secondary-button.w-button#passToggleTrigger(data-open="Show password" data-close="Hide password") Show password
+    

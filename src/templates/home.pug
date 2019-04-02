@@ -1,0 +1,61 @@
+extends _layout.pug
+
+block title
+  | Home - Notemask
+
+block heading
+  | Send notes that will self-destruct after being read
+  
+block content
+  .form-block.w-form
+    form#createNode(name="email-form")
+      textarea(
+        id="field"
+        name="note"
+        placeholder="Write your note here..."
+        maxlength="5000"
+        required=""
+        class="textarea w-input"
+      )
+      .slide-toggle.settings-block.hide
+        .row.gap-60
+          .col-xs-12.col-sm-6 
+            .transparent-block
+             h3 Note self-destructs
+             .select
+              select#slct(name='self-desctucts')
+                option Choose an option
+                option(value='1') Pure CSS
+                option(value='2') No JS
+                option(value='3') Nice!
+          .col-xs-12.col-sm-6
+            .transparent-block.no-heading
+              label.checkbox-container
+                | Do not ask for confirmation before showing and destroying the note
+                input(type='checkbox')
+                span.checkmark
+          .col-xs-12.col-sm-6
+            .transparent-block
+              h3 Set password
+              .caption Enter a custom password to encrypt the note
+              input.ui-input(name="password" type="password" id="password")
+          .col-xs-12.col-sm-6
+            .transparent-block
+              .caption Confirm password
+              input.ui-input(name="password_repeat" type="password" id="passwordRepeat")
+          .col-xs-12.col-sm-6
+            .transparent-block
+              h3 Destruction notification
+              .caption E-mail to notify when note is destroyed
+              input.ui-input(type="email" value="doferson@gmail.com")
+          .col-xs-12.col-sm-6
+            .transparent-block
+              .caption Reference name for the note (optional)
+              input.ui-input(type="text" value="Eugene")
+      .spacer
+      .button-group
+        input(type="submit" value="Create note" data-wait="Please wait..." class="primary-button w-button")
+        a.right(href="/" class="settings-button w-inline-block")
+          img(src="./settings-icon.svg" alt="" class="settings-icon")
+          div(data-open="Show options" data-close="Disable options") Show options
+      

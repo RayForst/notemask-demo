@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>facebook-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="footer-desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1040.000000, -35.000000)">
+        <g id="Group-7" fill="#323453">
+            <path d="M1040,50 C1040,41.7157283 1046.71573,35 1055,35 C1063.28427,35 1070,41.7157283 1070,50 C1070,58.2842717 1063.28427,65 1055,65 C1046.71573,65 1040,58.2842717 1040,50 Z M1056.23717,59 L1056.23717,50.749034 L1058.45596,50.749034 L1058.75,47.9057054 L1056.23717,47.9057054 L1056.24094,46.4825921 C1056.24094,45.7410082 1056.30958,45.3436506 1057.3472,45.3436506 L1058.73429,45.3436506 L1058.73429,42.5 L1056.51519,42.5 C1053.84969,42.5 1052.9115,43.8793203 1052.9115,46.1989032 L1052.9115,47.9060274 L1051.25,47.9060274 L1051.25,50.749356 L1052.9115,50.749356 L1052.9115,59 L1056.23717,59 Z" id="facebook-icon"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+html
+  head
+    meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
+    title 
+      block title
+    meta(content="width=device-width, initial-scale=1" name="viewport")
+    include _favicon
+    link(href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" rel="stylesheet" type="text/css")
+    link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/tooltipster.min.css")
+    link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/themes/tooltipster-light.css")
+
+    link(href="style.css" rel="stylesheet" type="text/css")
+    style(type="text/css")
+      include css/_fonts.css
+  body.body
+    main.content
+      .hero
+        include _header.pug
+        .note-input
+          .main-input
+            block content
+    .footer
+      .footer-cont
+        .div-block-2
+          a.button.w-button(href="/") Create new note
+          .div-block-3
+            a.link(href='#') Support
+            a.link(href='#') Privacy
+            a.link(href='#') About
+            a.link(href='#') Blog
+        .socials
+          a.link-block-2.w-inline-block(href="https://facebook.com")
+            img(src="facebook-icon.svg" alt="Facebook" title="Facebook")
+          a.link-block-2.w-inline-block(href="https://twitter.com")
+            img(src="twitter-icon.svg" alt="Twitter" title="Twitter")
+
+    script(
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+      defer
+    )
+
+    script(
+      src="https://cdn.jsdelivr.net/npm/tooltipster@4.2.6/dist/js/tooltipster.bundle.min.js"
+      crossorigin="anonymous"
+      defer
+    )
+    
+    script(
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"
+      crossorigin="anonymous"
+      defer
+    )
+    script(defer src="app.min.js")
+          
