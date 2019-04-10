@@ -255,7 +255,6 @@ select {
   width: 100%;
   line-height: 48px;
   background: transparent;
-  overflow: hidden;
   border-radius: .25em;
 
   &.language {
@@ -313,12 +312,28 @@ select {
   font-family: "Graphik Regular";
   line-height: 38px;
   font-size: 16px;
-  background: #fff1ce;
+  background-color: #fff;
+  user-select: none; 
+  // Use vendor prefixes as `appearance` isn't part of the CSS spec.
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: 0;
+
+  &::-ms-value {
+    outline: 0 !important;
+  }   
+
+  // Hides the default caret in IE11
+  &::-ms-expand {
+    display: none;
+  }
 }
 
-select::-ms-expand {
-  display: none;
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
 }
+
 /* Arrow */
 .select::after {
   content: "\e603";
